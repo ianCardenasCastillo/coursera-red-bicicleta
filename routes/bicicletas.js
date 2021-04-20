@@ -8,6 +8,7 @@ var router = express.Router();
  */
 var bicicletaController = require('../controllers/bicicleta')
 var handlersBicicleta = bicicletaController(); // Se instancia? un handlers de bicicletas
+
 /* GET users listing. */
 router.get('/', handlersBicicleta.bicicletaList);
 router.get('/create', handlersBicicleta.bicicletaCreateGet);
