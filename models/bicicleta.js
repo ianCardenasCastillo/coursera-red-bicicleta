@@ -20,7 +20,7 @@ Bicicleta.findById=(biciId)=>{
         return found;
     }
     else{
-        throw new Error(`No existe una bicicleta con el id ${biciId}`)
+        return null;
     }
 }
 
@@ -35,10 +35,10 @@ Bicicleta.removeById=(biciId)=>{
     }
 }
 
-var bici1= new Bicicleta(1,'rojo','urbana',[-33.4545163,-70.5978979]);
-var bici2= new Bicicleta(2,'blanca','urbana',[-33.4544707,-70.605443]);
+// var bici1= new Bicicleta(1,'rojo','urbana',[-33.4545163,-70.5978979]);
+// var bici2= new Bicicleta(2,'blanca','urbana',[-33.4544707,-70.605443]);
 
-Bicicleta.add(bici1);
-Bicicleta.add(bici2);
+// Bicicleta.add(bici1);
+// Bicicleta.add(bici2);
 
 module.exports = Bicicleta;
