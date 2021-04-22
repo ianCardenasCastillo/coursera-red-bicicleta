@@ -12,7 +12,7 @@ module.exports = ()=>({
         )
         bici.ubicacion=[req.body.lat,req.body.lng];
         Bicicleta.add(bici)
-        res.status(200).json({bicicleta:bici})
+        res.status(201).json({bicicleta:bici})
     },
     bicicletaDelete:(req,res)=>{
         let id = req.params.id;
